@@ -1,1 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.subContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vw;
+    margin-left: 14vm;
+
+}
+
+.upper-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.upper-container p{
+    font-size: 6vh;
+    font-weight: 900;
+}
+
+.upper-container #saveBtn{
+    background-color: black;
+    color: white;
+    border-radius: 14px;
+    width: 15%;
+    height: 4vw;
+    font-size: 20px;
+}
+
+.upper-container #historyBtn{
+    background-color: black;
+    color: white;
+    border-radius: 14px;
+    width: 13%;
+    height: 4vw;
+    font-size: 20px;
+}
+
+.middle-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    flex-wrap: wrap;
+}
+
+.middle-container .box1 #problemBar{
+    position: relative;
+    bottom: 15px;
+    left: -14px;
+    border-radius: 25px;
+    width: 97%;
+    height: 43%;
+    font-size: 20px;
+    background-color: #d1d1d1c9;
+    color: black;
+}
+
+input[type="text"]{
+    text-align: center;
+}
+
+.middle-container .box2 #categoryBar{
+    position: relative;
+    bottom: 15px;
+    left: -8px;
+    border-radius: 25px;
+    width: 99%;
+    height: 50%;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+.middle-container .box3 button{
+    background-color: #d1d1d1c9;
+    position: relative;
+    top: 41px;
+    width: 115%;
+    height: 64%;
+    border-radius: 42px;
+}
+
+.container-input{
+    background-color: #d1d1d1c9;
+    color: black;
+    position: relative;
+    width: 64%;
+    height: 18vw;
+    border-radius: 25px;
+}
+
+.container-input button{
+    background-color: transparent;    
+    position: absolute;
+    top: 80%;
+    left: 92.8%;
+    border: none;
+}
+
+.historycon{
+    position: relative;
+    background-color: rgba(209, 209, 209, 0.79);
+    color: black;
+    width: 54%;
+    min-height: 18vw;
+    height: auto;
+    margin-left: 14vw;
+    padding-left: 1%;
+    border-radius: 25px;
+    display: none;
+}
+
+.inputBox1{
+    font-weight: 800;
+    font-size: xx-large;
+    margin-left: 2%;
+}
+
+.inputBox2{
+    display: flex;
+    height: 75%;
+    align-items: center;
+    margin-left: 7%;
+    font-weight: 600;
+    font-size: x-large;
+}
