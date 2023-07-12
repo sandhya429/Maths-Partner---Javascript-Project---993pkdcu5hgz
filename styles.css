@@ -1,139 +1,113 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+button {
+  cursor: pointer;
+}
+.upper-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  background-color: gray;
+  padding: 20px;
+  color: aliceblue;
+  text-transform: uppercase;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
+.btn {
+  background-color: black;
+  color: white;
+  border-radius: 14px;
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-.subContainer{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5vw;
-    margin-left: 14vm;
-
+.middle-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+.middle-container label {
+  display: block;
+  font-size: 10px;
+  margin-bottom: 5px;
 }
 
-.upper-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+.middle-container input,
+.middle-container select {
+  width: 100%;
+  /* height: 30px; */
+  padding: 5px 10px;
+  font-size: 1rem;
 }
 
-.upper-container p{
-    font-size: 6vh;
-    font-weight: 900;
+#searchBtn {
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: gray;
+
+  font-size: 10px;
 }
 
-.upper-container #saveBtn{
-    background-color: black;
-    color: white;
-    border-radius: 14px;
-    width: 15%;
-    height: 4vw;
-    font-size: 20px;
+.container-input {
+  padding: 20px;
 }
 
-.upper-container #historyBtn{
-    background-color: black;
-    color: white;
-    border-radius: 14px;
-    width: 13%;
-    height: 4vw;
-    font-size: 20px;
+.container-input {
+  background-color: #d1d1d1c9;
+  color: black;
+  position: relative;
+  /* width: 64%; */
+  max-width: 500px;
+  height: 18vw;
+  border-radius: 25px;
+  margin: 20px;
 }
 
-.middle-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 1%;
-    margin-bottom: 1%;
-    flex-wrap: wrap;
+.container-input button {
+  background-color: transparent;
+  position: absolute;
+  bottom: 10px;
+  /* left: 92.8%; */
+  border: none;
+  right: 10px;
+  font-size: 10px;
+}
+.inputBox1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 2%;
+  /* margin: 20px auto; */
 }
 
-.middle-container .box1 #problemBar{
-    position: relative;
-    bottom: 15px;
-    left: -14px;
-    border-radius: 25px;
-    width: 97%;
-    height: 43%;
-    font-size: 20px;
-    background-color: #d1d1d1c9;
-    color: black;
+.inputBox2 {
+  display: flex;
+  height: 75%;
+  align-items: center;
+  margin-left: 7%;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
-input[type="text"]{
-    text-align: center;
-}
-
-.middle-container .box2 #categoryBar{
-    position: relative;
-    bottom: 15px;
-    left: -8px;
-    border-radius: 25px;
-    width: 99%;
-    height: 50%;
-    font-size: 20px;
-    background-color: black;
-    color: white;
-}
-
-.middle-container .box3 button{
-    background-color: #d1d1d1c9;
-    position: relative;
-    top: 41px;
-    width: 115%;
-    height: 64%;
-    border-radius: 42px;
-}
-
-.container-input{
-    background-color: #d1d1d1c9;
-    color: black;
-    position: relative;
-    width: 64%;
-    height: 18vw;
-    border-radius: 25px;
-}
-
-.container-input button{
-    background-color: transparent;    
-    position: absolute;
-    top: 80%;
-    left: 92.8%;
-    border: none;
-}
-
-.historycon{
-    position: relative;
-    background-color: rgba(209, 209, 209, 0.79);
-    color: black;
-    width: 54%;
-    min-height: 18vw;
-    height: auto;
-    margin-left: 14vw;
-    padding-left: 1%;
-    border-radius: 25px;
-    display: none;
-}
-
-.inputBox1{
-    font-weight: 800;
-    font-size: xx-large;
-    margin-left: 2%;
-}
-
-.inputBox2{
-    display: flex;
-    height: 75%;
-    align-items: center;
-    margin-left: 7%;
-    font-weight: 600;
-    font-size: x-large;
+.historycon {
+  position: relative;
+  background-color: #eee;
+  color: black;
+  /* width: 54%; */
+  max-width: 500px;
+  /* min-height: 500px; */
+  height: max-content;
+  margin: 20px auto;
+  border-radius: 25px;
+  display: none;
+  overflow: hidden;
+  padding: 20px;
 }
