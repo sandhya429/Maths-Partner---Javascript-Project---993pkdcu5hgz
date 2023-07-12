@@ -5,73 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Math Partner</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- add script link icon -->
-    <script src="https://kit.fontawesome.com/eb339bb978.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/eb339bb978.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-        <div class="container">
-            <!-- <create a upper container -->
-                <!-- Heyyy I'm Sandhya -->
-                <div class="upper-container">
-                    <p>Math Partner</p>
-                    <input type="button" id="historyBtn" value="History" onclick="HistoryButton()"/>
-                    <!-- <input type="button" id="saveBtn" value="SAVED SOLUTIONS" onclick="SavedButton()"> -->
-                </div>
-                <!-- create a empty div show some data here -->
-                <div class="historycon">
+    <div class="container">
+      <!-- <create a upper container -->
+      <!-- Heyyy I'm Sandhya -->
+      <div class="upper-container">
+        <h1>Math Partner</h1>
+        <button id="historyBtn" class="btn" onclick="HistoryButton(this)">
+          SAVED SOLUTIONS
+        </button>
+      </div>
+      <!-- create a empty div show some data here -->
+      <div class="historycon"></div>
 
-                </div>
-                <!-- create a second section  -->
-                <div class="subContainer">
-                    <!-- 1 -->
-                    <div class="middle-container">
-                     <!-- 2 -->
-                        <div class="box1">
-                      <!-- 3 -->
-                            <label for="problemBar"><h2>Problem</h2></label>
-                            <input type="text" id="problemBar" placeholder="TYPE HERE......">
-                        </div>
-                        <div class="box2">
-                       <!-- 4 -->
-                            <label for="categoryBar"><h2>Select Category</h2></label>
-                            <!-- Create a section option menu -->
-                            <select name="categoryBar" id="categoryBar">
-                                <!-- create a option -->
-                                <option value="simplify">Simplify</option>
-                                <option value="factor">Factor</option>
-                                <option value="derive">Derive</option>
-                                <option value="integrate">integrate</option>
-                                <option value="zeroes">zeroes</option>
-                                <option value="tangent">Find</option>
-                                <option value="area">area under curve</option>
-                                <option value="cos">cosine</option>
-                                <option value="sin">Sine</option>
-                                <option value="tan">Tangent</option>
-                                <option value="across">Inverse Cosine</option>
-                                <option value="arosin">Inverse Sine</option>
-                                <option value="arctan">Inverse Tangent</option>
-                                <option value="abs">Absolute Value</option>
-                                <option value="log">Logarithm</option>
-                            </select>
-                        </div>
-                        
-                        <div class="box3">
-                            <button type="submit" id="searchBtn" onclick="SearchButton()"><i class="fa-solid fa-magnifying-glass fa-3x"></i></button>
-                        </div>
-                        <!-- <div class="box3">
-                            <button type="submit" class="fa-solid fa-magnifying-glass f"></button>
-                        </div>                         -->
-                    </div>
-                    <!-- Create a container inputbox -->
-                    <div class="container-input">
-                        <div class="inputBox1"></div>
-                        <div class="inputBox2"></div>
-                        <!-- Create a delete button -->
-                        <button type="reset" id="deleteBtn" onclick="deleteBtn()"><i class="fa-solid fa-trash-can fa-3x"></i></button>
-                    </div>
-                </div>
+      <!-- create a second section  -->
+      <div class="subContainer">
+        <!-- 1 -->
+        <div class="middle-container">
+          <!-- 2 -->
+          <div class="box1">
+            <!-- 3 -->
+            <label for="problemBar"><h2>Problem</h2></label>
+            <input type="text" id="problemBar" placeholder="TYPE HERE......" />
+          </div>
+          <div class="box2">
+            <!-- 4 -->
+            <label for="categoryBar"><h2>Select Category</h2></label>
+            <!-- Create a section option menu -->
+            <select name="categoryBar" id="categoryBar">
+              <!-- create a option -->
+              <option value="simplify">Simplify</option>
+              <option value="factor">Factor</option>
+              <option value="derive">Derive</option>
+              <option value="integrate">Integrate</option>
+              <option value="zeroes">Find 0's</option>
+              <option value="tangent">Find Tangent</option>
+              <option value="area">Area Under Curve</option>
+              <option value="cos">Cosine</option>
+              <option value="sin">Sine</option>
+              <option value="tan">Tangent</option>
+              <option value="arccos">Inverse Cosine</option>
+              <option value="arcsin">Inverse Sine</option>
+              <option value="arctan">Inverse Tangent</option>
+              <option value="abs">Absolute Value</option>
+              <option value="log">Logarithm</option>
+            </select>
+          </div>
+
+          <div class="box3">
+            <button type="submit" id="searchBtn" onclick="SearchButton()">
+              <i class="fa-solid fa-magnifying-glass fa-3x"></i>
+            </button>
+          </div>
+
         </div>
-        <script src="App.js"></script>
+
+        <!-- Create a container inputbox -->
+        <div class="container-input">
+          <div class="inputBox1"></div>
+          <div class="inputBox2"></div>
+          <!-- Create a delete button -->
+          <button type="reset" id="deleteBtn" onclick="deleteBtn()">
+            <i class="fa-solid fa-trash-can fa-3x"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="App.js"></script>
   </body>
 </html>
